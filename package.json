@@ -1,0 +1,18 @@
+{
+  "name": "alsatian-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf ./build && ./node_modules/.bin/tsc",
+    "unit-tests": "./node_modules/.bin/alsatian \"./build/**/*.test.js\" --tap | ./node_modules/.bin/tap-mocha-reporter spec",
+    "test": "npm run unit-tests"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alsatian": "^2.2.1",
+    "tap-mocha-reporter": "^3.0.7",
+    "typescript": "^2.9.2"
+  }
+}
